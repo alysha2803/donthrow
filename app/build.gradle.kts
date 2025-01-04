@@ -5,11 +5,11 @@ plugins {
 
 
 android {
-    namespace = "com.example.healthhub"
+    namespace = "com.example.donthrow"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.healthhub"
+        applicationId = "com.example.donthrow"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -52,6 +52,9 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation(libs.firebase.firestore)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
+    implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

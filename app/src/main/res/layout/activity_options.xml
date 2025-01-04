@@ -5,7 +5,7 @@
     android:id="@+id/options"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/optionbg"
+    android:background="@drawable/green_landing_pg"
     tools:context=".Options"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="30dp">
@@ -15,18 +15,18 @@
         android:id="@+id/createAccBtn"
         android:layout_width="278dp"
         android:layout_height="56dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/darkgreen"
+        android:fontFamily="@font/interfont"
         android:text="Create Account"
-        android:textColor="@color/green"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:fontFamily="@font/interfont"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/TV_Login"
@@ -34,6 +34,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/interfont"
         android:text="Login"
+        android:textStyle="bold"
+        android:textColor="@color/darkgreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -48,6 +50,7 @@
         android:fontFamily="@font/interfont"
         android:text="Already have an account?"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

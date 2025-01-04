@@ -31,6 +31,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:text="Verify your identity "
+                android:textColor="@color/darkgreen"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -117,6 +118,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:text="Change your email "
+                android:textColor="@color/darkgreen"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textSize="25dp"
                 android:textStyle="bold" />

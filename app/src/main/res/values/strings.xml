@@ -1,9 +1,23 @@
 <resources>
-    <string name="app_name">Health Hub</string>
+    <string name="app_name">Donthrow</string>
     <string name="title_activity_home">Home</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Added string arrays for product categories and conditions -->
+    <string-array name="product_categories">
+        <item>Clothing</item>
+        <item>Furniture</item>
+        <item>Electronics</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="product_conditions">
+        <item>Never Used</item>
+        <item>Lightly Used</item>
+        <item>Heavily Used</item>
+    </string-array>
 </resources>

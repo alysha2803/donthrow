@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
-    android:background = "@drawable/loginbg"
+    android:background = "@drawable/green_bg_for_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
@@ -13,9 +13,8 @@
         android:id="@+id/editTextEmail"
         android:layout_width="310dp"
         android:layout_height="58dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/green_rectangle"
         android:drawablePadding="10dp"
-        android:hint="Enter your email"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -25,19 +24,18 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TV_Email"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <EditText
         android:id="@+id/editTextPW"
         android:layout_width="310dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="236dp"
-        android:background="@drawable/input_bg"
-        android:drawablePadding="10dp"
-        android:hint="Confirm your password"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/green_rectangle"
+        android:drawablePadding="0dp"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -47,42 +45,41 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TV_password"
-        app:layout_constraintVertical_bias="0.0" />
-
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/TV_wlcBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/abril_fatface"
-        android:text="Welcome Back"
-        android:textColor="@color/white"
+        android:fontFamily="@font/caprasimo"
+        android:text="Welcome Back!"
+        android:textColor="@color/green"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229" />
+        app:layout_constraintVertical_bias="0.341" />
+
 
     <TextView
         android:id="@+id/TV_afterWlc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login to your account"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TV_wlcBack"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.02" />
 
 
     <TextView
@@ -91,33 +88,32 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/interfont"
         android:text="Email"
-        android:textColor="@color/green"
+        android:textColor="@color/darkgreen"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TV_afterWlc"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.066" />
 
     <TextView
         android:id="@+id/TV_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="250dp"
         android:fontFamily="@font/interfont"
         android:text="Password"
-        android:textColor="@color/green"
+        android:textColor="@color/darkgreen"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
-        app:layout_constraintVertical_bias="0.434" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/Login_Button"
@@ -129,18 +125,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPW"
-        app:layout_constraintVertical_bias="0.304" />
-
+        app:layout_constraintVertical_bias="0.315" />
 
     <TextView
         android:id="@+id/TV_dont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
-        android:textColor="@color/green"
+        android:textColor="@color/darkgreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"

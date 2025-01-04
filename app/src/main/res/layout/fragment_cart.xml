@@ -1,23 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartFragment"
-    android:id="@+id/Cart">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    android:background="@color/white">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CART"
-        android:textColor="@color/black"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Header Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="Back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/green_back_button"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Order Details"
+                android:textColor="@color/green"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addressSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/darkgreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+60 13-45678910\n123 Jalan Taman, Taman Seri Mutiara,\n43000 Kajang, Selangor, Malaysia."
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="26dp" />
+
+        </LinearLayout>
+
+        <!-- Delivery Method -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Method"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/darkgreen" />
+
+        <RadioGroup
+            android:id="@+id/deliveryMethodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/doorstepDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doorstep Delivery - RM4.90\nGuaranteed delivery by 13-17 Dec\nGet a voucher if not attempted by 17 Dec"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/selfCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self Collection Point - RM2.20\nGuaranteed delivery by 10-12 Dec\nFind nearest collection point"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:buttonTint="@color/black" />
+        </RadioGroup>
+
+        <!-- Payment Method -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/darkgreen" />
+
+        <RadioGroup
+            android:id="@+id/paymentMethodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/paymentFPX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FPX Online Banking"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/paymentCOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash on Delivery"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/paymentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit Card"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:buttonTint="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/totalHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/darkgreen" />
+
+        <TextView
+            android:id="@+id/total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="RM 0"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/darkgreen" />
+
+        <!-- Place Order Button -->
+        <Button
+            android:id="@+id/placeOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:backgroundTint="@color/darkgreen"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

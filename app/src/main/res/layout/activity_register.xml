@@ -18,31 +18,35 @@
             android:orientation="vertical"
             android:padding="50dp">
 
-            <ImageView
-                android:id="@+id/IV_AppLogo"
-                android:layout_width="99dp"
-                android:layout_height="82dp"
-                android:src="@drawable/logo" />
 
-            <TextView
-                android:id="@+id/TV_register"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/abril_fatface"
-                android:text="Register"
-                android:textColor="@color/green"
-                android:textSize="35sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
 
-            <TextView
-                android:id="@+id/TV_afterRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Create your new account"
-                android:textColor="@color/green"
-                android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/TV_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/caprasimo"
+                    android:text="Register"
+                    android:textColor="@color/green"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_afterRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Create your new account"
+                    android:textColor="@color/green"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
 
 
             <TextView
@@ -201,11 +205,11 @@
                 android:id="@+id/Signup_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/darkgreen"
                 android:text="Sign up"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:backgroundTint="@color/green"
-                android:layout_marginTop="16dp" />
+                android:textStyle="bold" />
 
 
             <TextView

@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
     app:startDestination="@+id/Home">
 
-
-
     <fragment
         android:id="@+id/Home"
-        android:name="com.example.healthhub.HomeFragment"
+        android:name="com.example.donthrow.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/Appointment"
-        android:name="com.example.healthhub.AppointmentFragment"
+        android:name="com.example.donthrow.LocationFragment"
         android:label="fragment_appointment"
-        tools:layout="@layout/fragment_appointment" />
+        tools:layout="@layout/fragment_location" />
     <fragment
         android:id="@+id/Article"
-        android:name="com.example.healthhub.ArticlesFragment"
+        android:name="com.example.donthrow.ListingFragment"
         android:label="fragment_articles"
-        tools:layout="@layout/fragment_articles" />
+        tools:layout="@layout/fragment_listing" />
     <fragment
-        android:id="@+id/Pharmacy"
-        android:name="com.example.healthhub.PharmacyFragment"
-        android:label="fragment_pharmacy"
-        tools:layout="@layout/fragment_cart" />
+        android:id="@+id/Marketplace"
+        android:name="com.example.donthrow.MarketplaceFragment"
+        android:label="fragment_marketplace"
+        tools:layout="@layout/fragment_marketplace" />
     <fragment
         android:id="@+id/MyProfileFragment"
-        android:name="com.example.healthhub.MyProfileFragment"
+        android:name="com.example.donthrow.MyProfileFragment"
         android:label="fragment_my_profile"
         tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/SitesFragment"
+        android:name="com.example.donthrow.SitesFragment"
+        android:label="fragment_sites"
+        tools:layout="@layout/fragment_sites" />
 </navigation>

@@ -4,27 +4,27 @@
 
     <item
         android:id="@+id/Home"
-        android:icon="@drawable/ic_home"
-        android:title=""/>
+        android:icon="@drawable/home_icon"
+        android:title="" />
 
     <item
         android:id="@+id/Appointment"
-        android:icon="@drawable/ic_calendar"
+        android:icon="@drawable/location_icon"
         android:title=""/>
 
     <item
         android:id="@+id/Article"
-        android:icon="@drawable/ic_article"
+        android:icon="@drawable/listing_icon"
         android:title=""/>
 
     <item
-        android:id="@+id/Pharmacy"
-        android:icon="@drawable/ic_cart"
+        android:id="@+id/Marketplace"
+        android:icon="@drawable/marketplace_icon"
         android:title=""/>
 
     <item
         android:id="@+id/MyProfileFragment"
-        android:icon="@drawable/ic_profile"
+        android:icon="@drawable/profile_icon"
         android:title=""/>
 
 

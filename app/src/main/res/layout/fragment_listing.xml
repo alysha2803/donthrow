@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Marketplace Listing"
+            android:textColor="@color/darkgreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Text above Image -->
+        <TextView
+            android:id="@+id/imageSectionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload a picture of the used item to sell."
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:backgroundTint="@color/darkgreen"/>
+
+        <!-- Text before Product Name -->
+
+        <TextView
+            android:id="@+id/productNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/interfont"
+            android:text="Product Name"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/darkgreen"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"
+            android:layout_marginTop="8dp"
+            android:hint="Item Name"
+            android:inputType="text" />
+
+        <!-- Text before Category -->
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/darkgreen"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"/>
+
+        <!-- Text before Condition -->
+        <TextView
+            android:id="@+id/conditionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condition"
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/darkgreen"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/conditionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"
+            android:layout_marginTop="8dp" />
+
+        <!-- Text before Price -->
+        <TextView
+            android:id="@+id/productPriceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/darkgreen"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <!-- Text before Location -->
+        <TextView
+            android:id="@+id/productLocationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Location"
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/darkgreen"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/productLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"
+            android:hint="Pickup Location"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+        <!-- Text before Postage -->
+        <TextView
+            android:id="@+id/productPostageLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postage Time Period"
+            android:textSize="16sp"
+            android:fontFamily="@font/interfont"
+            android:textColor="@color/darkgreen"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/productPostage"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:background="@drawable/green_rectangle"
+            android:hint="Postage Time Period"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveProductButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            android:text="Add Product"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

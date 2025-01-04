@@ -1,22 +1,22 @@
 {
   "project_info": {
-    "project_number": "442925031518",
-    "firebase_url": "https://health-hub-apps-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "health-hub-apps",
-    "storage_bucket": "health-hub-apps.firebasestorage.app"
+    "project_number": "1029958719790",
+    "firebase_url": "https://donthrow-app-2amavs-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "donthrow-app-2amavs",
+    "storage_bucket": "donthrow-app-2amavs.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:442925031518:android:4b8db2d40d6b28d28a94cf",
+        "mobilesdk_app_id": "1:1029958719790:android:bafbcfc6c07dd0879542bf",
         "android_client_info": {
-          "package_name": "com.example.healthhub"
+          "package_name": "com.example.donthrow"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDJWDnLdYSoPwwJe1a6bVw_WJE-ludvaLU"
+          "current_key": "AIzaSyDuR5zYg03EnS4JP3Rk5Hm43PeqnLjFIPk"
         }
       ],
       "services": {
