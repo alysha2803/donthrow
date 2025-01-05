@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:progressTint="#FFEB3B"
+        android:stepSize="0.5" />
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your feedback (optional)"
+        android:fontFamily="@font/interfont"
+        android:minLines="3"
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/submitRatingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/darkgreen"
+        android:fontFamily="@font/interfont"
+        android:text="Submit Rating" />
+
+</LinearLayout>
