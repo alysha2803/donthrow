@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -68,6 +70,28 @@ public class MarketplaceFragment extends Fragment {
         // Back button setup to go back
         ImageButton backButton = view.findViewById(R.id.back_button);
         backButton.setOnClickListener(v -> requireActivity().onBackPressed());
+
+        // Search button setup
+        ImageButton searchButton = view.findViewById(R.id.search_button);
+        searchButton.setOnClickListener(v -> {
+            // Create a new instance of SearchFilterFragment
+            SearchFilterFragment searchFilterFragment = new SearchFilterFragment();
+
+            // Get the FragmentManager
+            FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+
+            // Begin a transaction
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+            // Replace the current fragment with SearchFilterFragment
+            fragmentTransaction.replace(R.id.fragment_searchfilter, searchFilterFragment); // Replace with your fragment container ID
+
+            // Add the transaction to the back stack (optional)
+            fragmentTransaction.addToBackStack(null);
+
+            // Commit the transaction
+            fragmentTransaction.commit();
+        });
 
         return view;
     }
